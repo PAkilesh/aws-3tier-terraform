@@ -33,7 +33,11 @@ variable "vpc_cidr" {
 
 
 # ==========================================
+<<<<<<< HEAD
 # Public Subnets - Web Tier
+=======
+# Public Subnets
+>>>>>>> c17f7d2 (Build AWS 3-tier network with NAT Gateway)
 # ==========================================
 
 variable "public_subnet_1_cidr" {
@@ -50,7 +54,7 @@ variable "public_subnet_2_cidr" {
 
 
 # ==========================================
-# Private Subnets - Application Tier
+# Private Database Subnets - 3 Tier
 # ==========================================
 
 variable "private_app_subnet_1_cidr" {
@@ -67,7 +71,11 @@ variable "private_app_subnet_2_cidr" {
 
 
 # ==========================================
+<<<<<<< HEAD
 # Private Subnets - Database Tier
+=======
+# Private Database Subnets - 3 Tier
+>>>>>>> c17f7d2 (Build AWS 3-tier network with NAT Gateway)
 # ==========================================
 
 variable "private_db_subnet_1_cidr" {
