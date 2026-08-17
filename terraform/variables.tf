@@ -1,9 +1,5 @@
-# ==========================================
-# AWS Configuration
-# ==========================================
-
 variable "aws_region" {
-  description = "AWS region where resources will be created"
+  description = "AWS region where the infrastructure will be created"
   type        = string
   default     = "ap-south-1"
 }
@@ -15,30 +11,16 @@ variable "project_name" {
 }
 
 variable "environment" {
-  description = "Deployment environment"
+  description = "Environment name"
   type        = string
   default     = "dev"
 }
-
-
-# ==========================================
-# VPC
-# ==========================================
 
 variable "vpc_cidr" {
   description = "CIDR block for the VPC"
   type        = string
   default     = "10.0.0.0/16"
 }
-
-
-# ==========================================
-<<<<<<< HEAD
-# Public Subnets - Web Tier
-=======
-# Public Subnets
->>>>>>> c17f7d2 (Build AWS 3-tier network with NAT Gateway)
-# ==========================================
 
 variable "public_subnet_1_cidr" {
   description = "CIDR block for public subnet 1"
@@ -52,11 +34,6 @@ variable "public_subnet_2_cidr" {
   default     = "10.0.2.0/24"
 }
 
-
-# ==========================================
-# Private Database Subnets - 3 Tier
-# ==========================================
-
 variable "private_app_subnet_1_cidr" {
   description = "CIDR block for private application subnet 1"
   type        = string
@@ -68,15 +45,6 @@ variable "private_app_subnet_2_cidr" {
   type        = string
   default     = "10.0.12.0/24"
 }
-
-
-# ==========================================
-<<<<<<< HEAD
-# Private Subnets - Database Tier
-=======
-# Private Database Subnets - 3 Tier
->>>>>>> c17f7d2 (Build AWS 3-tier network with NAT Gateway)
-# ==========================================
 
 variable "private_db_subnet_1_cidr" {
   description = "CIDR block for private database subnet 1"
@@ -90,19 +58,14 @@ variable "private_db_subnet_2_cidr" {
   default     = "10.0.22.0/24"
 }
 
-
-# ==========================================
-# Availability Zones
-# ==========================================
-
 variable "availability_zone_1" {
-  description = "Availability Zone 1"
+  description = "First availability zone"
   type        = string
   default     = "ap-south-1a"
 }
 
 variable "availability_zone_2" {
-  description = "Availability Zone 2"
+  description = "Second availability zone"
   type        = string
   default     = "ap-south-1b"
 }
